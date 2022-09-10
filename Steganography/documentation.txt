@@ -1,0 +1,38 @@
+Name                    :   Deepika.S
+Date                    :   10.09.2022
+Description             :   LSB Image Steganography
+Sample execution        :   emertxe@ubuntu:~/Desktop/Steg_Project$ gcc *.c
+                            emertxe@ubuntu:~/Desktop/Steg_Project$ ./a.out -e beautiful.bmp secret.txt stego.bmp
+                            Selected Encoding...
+                            Read and validate encode arguments is successful
+                            ###### Encoding procedure started ######
+                            Opened all the files successfully..
+                            Started Encoding..
+                            width = 1024
+                            height = 768
+                            Check capacity is successful
+                            Copied bmp header successfully
+                            Encoded magic string successfully
+                            Successfully encoded secret file extension size
+                            Successfully encoded secret file extension
+                            Successfully encoded secret file size
+                            Successfully encoded secret file data
+                            Copied remaining data
+                            ###### Encoding procedure completed ######
+                            emertxe@ubuntu:~/Desktop/Steg_Project$ ./a.out -d stego.bmp decoded.txt
+                            Selected decoding...
+                            Read and validate decode arguments is successful
+                            ###### Decoding procedure started ######
+                            Opened required files is successfully
+                            Successfully decoded magic string
+                            Succesfully decoded file extension size
+                            Succesfully decoded Secret File Extension
+                            Successfully decoded secret file size
+                            Successfully Decoded secret file data
+                            ###### Decoding procedure completed ######
+                            emertxe@ubuntu:~/Desktop/Steg_Project$ ./a.out 
+                            Invalid Operation type, please use as mentioned below
+                            Usage:
+                            Encoding: ./a.out -e beautiful.bmp secret.txt stego.bmp
+                            Decoding: ./a.out -d stego.bmp decode.txt
+  
