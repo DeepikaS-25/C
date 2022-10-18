@@ -31,7 +31,7 @@ void positive_fibonacci(int limit, int first, int second, int next)     //functi
     {
         if(next != 0)
         {
-            printf(", ");                             //printing first element
+            printf(", ");                             //printing comma after each element
         }
         printf("%d", next);                             //printing sequence
         first = second;
